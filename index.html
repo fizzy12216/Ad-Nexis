@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AdNexis | Local SEO & Digital Marketing Karachi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- JSON-LD Structured Data for LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "AdNexis Digital Marketing",
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200",
+      "@id": "https://adnexis.pk",
+      "url": "https://adnexis.pk",
+      "telephone": "+923430418776",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Karachi Neighborhoods",
+        "addressLocality": "Karachi",
+        "addressRegion": "Sindh",
+        "postalCode": "75500",
+        "addressCountry": "PK"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 24.8607,
+        "longitude": 67.0011
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "19:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/adnexis/"
+      ],
+      "areaServed": [
+        "DHA Karachi",
+        "Clifton",
+        "Saddar",
+        "Gulshan-e-Iqbal",
+        "North Nazimabad"
+      ],
+      "priceRange": "$$"
+    }
+    </script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Lexend', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                50: '#f0fff4',
+                100: '#dcffe6',
+                200: '#0EF476', 
+                300: '#0EB371', 
+                400: '#0EB371',
+                500: '#0EF476', 
+                600: '#0EB371',
+                700: '#0a8c58',
+                800: '#086e45',
+                900: '#0D3E66', 
+              },
+              navy: '#0D3E66',
+              neon: '#0EF476',
+              mgreen: '#0EB371',
+              slatebrand: '#64748B'
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body { scroll-behavior: smooth; }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(14, 244, 118, 0.2);
+      }
+      .text-slate-custom { color: #64748B; }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom": "https://esm.sh/react-dom@^19.2.3",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0",
+    "vite": "https://esm.sh/vite@^7.3.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+  </head>
+  <body class="bg-gray-50 text-navy overflow-x-hidden font-sans">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  </body>
+</html>
