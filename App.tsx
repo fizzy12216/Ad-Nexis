@@ -8,6 +8,7 @@ import AreaDetail from './pages/AreaDetail.tsx';
 import Portfolio from './pages/Portfolio.tsx';
 import Blog from './pages/Blog.tsx';
 import Contact from './pages/Contact.tsx';
+import Sitemap from './pages/Sitemap.tsx';
 import PrivacyPolicy from './pages/PrivacyPolicy.tsx';
 import TermsOfService from './pages/TermsOfService.tsx';
 import WhatsAppButton from './components/WhatsAppButton.tsx';
@@ -34,6 +35,7 @@ const App: React.FC = () => {
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/sitemap" element={<Sitemap />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
           </Routes>

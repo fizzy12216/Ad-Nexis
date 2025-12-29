@@ -1,5 +1,5 @@
-
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const TermsOfService: React.FC = () => {
   const effectiveDate = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
@@ -8,89 +8,57 @@ const TermsOfService: React.FC = () => {
     <div className="pt-20">
       <section className="bg-gray-50 py-16 lg:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h1 className="text-4xl lg:text-5xl font-extrabold font-display text-navy mb-4">Terms of Service</h1>
+          <h1 className="text-4xl lg:text-5xl font-extrabold font-display text-navy mb-4 leading-tight">AdNexis Terms of Service & Business Agreement</h1>
           <p className="text-slatebrand font-medium">Effective Date: {effectiveDate}</p>
         </div>
       </section>
 
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <div className="prose prose-lg max-w-none text-slatebrand space-y-8">
-            <p className="text-xl leading-relaxed">
-              These Terms govern your use of the AdNexis website and services. By using our website, you agree to these terms.
+          <div className="prose prose-lg max-w-none text-slatebrand space-y-8 leading-relaxed">
+            <p className="text-xl">
+              Welcome to AdNexis. By accessing our website and utilizing our Local SEO, GMB Optimization, or AEO services, you agree to comply with and be bound by the following terms and conditions.
             </p>
 
             <div>
-              <h2 className="text-2xl font-bold text-navy mb-4">1. Services</h2>
+              <h2 className="text-2xl font-bold text-navy mb-4">1. Scope of Digital Marketing Services</h2>
+              <p className="mb-4">AdNexis provides a variety of digital marketing solutions tailored for the Karachi market, including but not limited to:</p>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Local SEO, Google Maps Marketing, GMB Optimization, Hyper-Local Marketing, AEO/AI Search.</li>
-                <li>Website content, blogs, and AI/voice search optimization consulting.</li>
+                <li>Google Business Profile (GMB) Management and verification assistance.</li>
+                <li>Hyper-local SEO strategies for neighborhoods like DHA, Clifton, and Saddar.</li>
+                <li>Answer Engine Optimization (AEO) for AI search visibility.</li>
+                <li>Conversion rate optimization for WhatsApp-led business models.</li>
               </ul>
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold text-navy mb-4">2. Use of Website</h2>
-              <ul className="list-disc pl-6 space-y-2">
-                <li>Lawful use only.</li>
-                <li>No hacking, disruption, or misuse.</li>
-                <li>No unauthorized copying or commercial use of content.</li>
-              </ul>
+              <h2 className="text-2xl font-bold text-navy mb-4">2. User Responsibilities</h2>
+              <p>Users must provide accurate business information for local search auditing. Any misuse of the AdNexis platform for automated scraping, disruption of services, or unauthorized commercial reproduction of our proprietary frameworks is strictly prohibited and governed by the laws of Pakistan.</p>
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold text-navy mb-4">3. Intellectual Property</h2>
-              <ul className="list-disc pl-6 space-y-2">
-                <li>All website content and branding are property of AdNexis.</li>
-                <li>No reproduction or derivative works without permission.</li>
-              </ul>
+              <h2 className="text-2xl font-bold text-navy mb-4">3. Intellectual Property Rights</h2>
+              <p>The content, layout, design, data, databases and graphics on this website are protected by intellectual property laws. Unless expressly permitted in writing by AdNexis, you may not copy, distribute, or create derivative works from any part of our site.</p>
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold text-navy mb-4">4. Payments & Services</h2>
-              <ul className="list-disc pl-6 space-y-2">
-                <li>Paid services as per agreement.</li>
-                <li>Services start after payment confirmation.</li>
-                <li>Refunds and cancellations follow contract terms.</li>
-              </ul>
+              <h2 className="text-2xl font-bold text-navy mb-4">4. Limitation of Liability and Rankings</h2>
+              <p>While AdNexis employs industry-leading practices to improve search rankings, search engines frequently update algorithms. We do not guarantee specific positions in the local 3-pack or organic search, as these are controlled by third-party platforms like Google.</p>
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold text-navy mb-4">5. Third-Party Links</h2>
-              <p>External links may exist; AdNexis is not responsible for external content.</p>
+              <h2 className="text-2xl font-bold text-navy mb-4">5. Governing Law</h2>
+              <p>These terms are governed by the laws of the Islamic Republic of Pakistan. Any disputes arising from these terms will be resolved in the courts of Karachi.</p>
             </div>
 
-            <div>
-              <h2 className="text-2xl font-bold text-navy mb-4">6. Limitation of Liability</h2>
-              <ul className="list-disc pl-6 space-y-2">
-                <li>Not liable for indirect or consequential damages.</li>
-                <li>Accuracy of rankings/results not guaranteed.</li>
-              </ul>
-            </div>
-
-            <div>
-              <h2 className="text-2xl font-bold text-navy mb-4">7. Termination</h2>
-              <p>Services or access may be suspended for violating terms.</p>
-            </div>
-
-            <div>
-              <h2 className="text-2xl font-bold text-navy mb-4">8. Governing Law</h2>
-              <ul className="list-disc pl-6 space-y-2">
-                <li>Pakistan laws apply.</li>
-                <li>Jurisdiction: Karachi.</li>
-              </ul>
-            </div>
-
-            <div className="bg-navy rounded-3xl p-8 text-white mt-12">
-              <h2 className="text-2xl font-bold text-neon mb-4">Contact us</h2>
-              <div className="space-y-2">
-                <p>Email: <a href="mailto:adnexismarketingagency@gmail.com" className="hover:text-neon underline">adnexismarketingagency@gmail.com</a></p>
-                <p>Phone / WhatsApp: <a href="tel:+923430418776" className="hover:text-neon underline">+92 343 0418776</a></p>
+            <div className="bg-navy rounded-3xl p-10 text-white mt-12 shadow-xl">
+              <h2 className="text-2xl font-bold text-neon mb-4">Questions Regarding Terms?</h2>
+              <p className="mb-6">If you have any questions about these Terms of Service, please reach out to our legal compliance team in Karachi.</p>
+              <div className="space-y-3">
+                <p><strong>Email:</strong> <a href="mailto:adnexismarketingagency@gmail.com" className="hover:text-neon underline">adnexismarketingagency@gmail.com</a></p>
+                <p><strong>WhatsApp:</strong> <a href="https://wa.me/923430418776" className="hover:text-neon underline">+92 343 0418776</a></p>
+                <Link to="/contact" className="inline-block mt-4 bg-neon text-navy px-6 py-2 rounded-xl font-bold">Contact Support</Link>
               </div>
-            </div>
-
-            <div>
-              <h2 className="text-2xl font-bold text-navy mb-4">9. Updates</h2>
-              <p>Terms may be updated; latest version on website.</p>
             </div>
           </div>
         </div>
