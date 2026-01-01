@@ -77,6 +77,15 @@ export const CASE_STUDIES: CaseStudy[] = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: 'post4',
+    title: 'Internal Linking: It\'s About Signal Control, Not Volume',
+    category: 'Local SEO',
+    date: 'March 20, 2024',
+    author: 'AdNexis Strategy',
+    excerpt: 'Internal linking is one of the most misunderstood parts of local SEO. Most people think it’s about "adding more links." It’s not. It’s about guiding Google’s attention.',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800'
+  },
+  {
     id: 'post1',
     title: 'The Future of Local SEO in Karachi: 2026 Trends',
     category: 'SEO Strategy',
@@ -93,14 +102,5 @@ export const BLOG_POSTS: BlogPost[] = [
     author: 'Zain Ahmed',
     excerpt: 'Simple tweaks to your Google Business Profile that can increase your foot traffic by up to 85%. Learn the secrets of Karachi\'s top-ranking pins.',
     image: 'https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&q=80&w=800'
-  },
-  {
-    id: 'post3',
-    title: 'Voice Search: Is Your Business AI-Ready?',
-    category: 'Innovation',
-    date: 'March 5, 2024',
-    author: 'Marketing Desk',
-    excerpt: 'How people search in Karachi is changing. Voice commands are replacing typing. Discover how to position your brand as the primary answer.',
-    image: 'https://images.unsplash.com/photo-1589254065878-42c9da997008?auto=format&fit=crop&q=80&w=800'
   }
 ];

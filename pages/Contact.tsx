@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 
 const Contact: React.FC = () => {
@@ -108,6 +107,14 @@ const Contact: React.FC = () => {
                     className="inline-flex items-center gap-3 bg-white/10 text-white px-6 py-4 rounded-xl font-bold hover:bg-white/20 transition-all border border-white/10"
                   >
                       Facebook Page
+                  </a>
+                  <a 
+                    href="https://www.instagram.com/adnexislocalseo/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-3 bg-white/10 text-white px-6 py-4 rounded-xl font-bold hover:bg-white/20 transition-all border border-white/10"
+                  >
+                      Instagram
                   </a>
                 </div>
               </div>

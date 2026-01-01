@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { SERVICES, AREAS, CASE_STUDIES } from '../constants.tsx';
+import { SERVICES, AREAS, CASE_STUDIES, BLOG_POSTS } from '../constants.tsx';
 
 const Home: React.FC = () => {
   return (
@@ -189,6 +189,35 @@ const Home: React.FC = () => {
                   </div>
                 </div>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Latest Insights Section */}
+      <section className="py-24 bg-white border-t border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+            <div className="max-w-2xl">
+              <h2 className="text-mgreen font-bold uppercase tracking-widest text-sm mb-4">Latest Insights</h2>
+              <h3 className="text-4xl font-extrabold font-display text-navy">SEO Secrets for Karachi Business Owners</h3>
+            </div>
+            <Link to="/blog" className="bg-navy text-white px-8 py-3 rounded-full font-bold hover:bg-black transition-all">
+              Visit Full Blog
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {BLOG_POSTS.slice(0, 3).map(post => (
+              <Link key={post.id} to="/blog" className="group bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:border-neon/30 hover:shadow-xl transition-all flex flex-col">
+                <div className="aspect-[16/10] overflow-hidden">
+                  <img src={post.image} alt={post.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                </div>
+                <div className="p-8">
+                  <div className="text-xs font-bold text-mgreen uppercase tracking-widest mb-3">{post.category}</div>
+                  <h4 className="text-xl font-bold text-navy mb-4 group-hover:text-mgreen transition-colors leading-tight">{post.title}</h4>
+                  <p className="text-slatebrand text-sm line-clamp-2 leading-relaxed">{post.excerpt}</p>
+                </div>
+              </Link>
             ))}
           </div>
         </div>
